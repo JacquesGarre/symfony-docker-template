@@ -1,38 +1,22 @@
 # Symfony PHP Project Template with Docker
 
-This is a template repository for starting Symfony PHP projects with Docker, using PHP-FPM and Nginx as the web server.
+## Overview
 
-## Getting Started
+This is a template repository for starting Symfony PHP projects with Docker, using PHP-FPM and Nginx as the web server. There is no database container included.
 
-To get started with this template, follow these steps:
+## Installation
 
-1. Clone this repository to your local machine:
+ #### 1. Create a repository from this template : 
+ - click the top right button "Use this template" 
+ - click "Create a new repository"
 
-   ```bash
-   git clone https://github.com/JacquesGarre/symfony-docker-template
+![Template repository](https://prnt.sc/J6DHD10YmrSi)
 
-2. 
-
-    ```bash
-    mv symfony-docker-template name-of-your-project
-
-3. 
-
-    ```bash
-    cd name-of-your-project
-
-4. 
-
-    ```bash
-    git remote set-url origin https://github.com/your-username/name-of-your-project.git
-
-5. 
-
-    ```bash
-    composer start
-
-6.
-
-    Go to http://localhost:8080
-
+ #### 2. Clone your new repository locally
+	 git clone git@github.com:username/your-new-repo.git
+	 cd your-new-repo.git
+ #### 3. Start the project
+ - Start docker daemon
+ - Run	  `composer start` to start the docker containers
+ - Go to http://localhost:8080
 
