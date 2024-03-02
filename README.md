@@ -10,8 +10,6 @@ This is a template repository for starting Symfony PHP projects with Docker, usi
  - click the top right button "Use this template" 
  - click "Create a new repository"
 
-![Template repository](https://prnt.sc/J6DHD10YmrSi)
-
  #### 2. Clone your new repository locally
 	 git clone git@github.com:username/your-new-repo.git
 	 cd your-new-repo.git
