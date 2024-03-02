@@ -2,6 +2,7 @@ version: "3"
 services:
 
   php:
+    container_name: php
     build: ./docker/php/.
     working_dir: /var/www/app
     volumes:
@@ -10,6 +11,7 @@ services:
       - app-network
 
   nginx:
+    container_name: nginx
     image: nginx:alpine
     working_dir: /var/www/app
     ports:
