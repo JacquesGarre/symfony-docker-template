@@ -1,17 +1,25 @@
-version: '3'
-
+version: "3"
 services:
 
-  nginx:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - .:/var/www/html
-    depends_on:
-      - php
-
   php:
-    image: php:8.3-fpm
+    build: ./docker/php/.
+    working_dir: /var/www/app
     volumes:
-      - .:/var/www/html
+      - .:/var/www/app
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:alpine
+    working_dir: /var/www/app
+    ports:
+      - 8000:80
+    volumes:
+      - .:/var/www/app
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

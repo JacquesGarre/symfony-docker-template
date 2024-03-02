@@ -22,6 +22,6 @@ This is a template repository for starting Symfony PHP projects with Docker, usi
 	 cd your-new-repo.git
  #### 3. Start the project
  - Start docker daemon
+ - copy .env.example to .env
  - Run the simple `composer start` to start the project and start coding
- - Go to http://localhost:8080
-
+ - Go to http://localhost:8000
