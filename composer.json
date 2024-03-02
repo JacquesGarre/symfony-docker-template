@@ -54,7 +54,9 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "start": "sh ./start.sh",
+        "stop": "docker compose down"
     },
     "conflict": {
         "symfony/symfony": "*"
